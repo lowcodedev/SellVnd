@@ -28,7 +28,7 @@ export default function WaitlistSection() {
           <ul className="mt-10 space-y-4">
             {BENEFITS.map((benefit) => (
               <li key={benefit} className="flex items-start gap-3 text-sm leading-[1.5] text-ink-100">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-brand-200">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-pop-400/15 text-pop-400">
                   <Check className="h-3 w-3" aria-hidden="true" />
                 </span>
                 {benefit}

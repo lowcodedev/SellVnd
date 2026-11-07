@@ -39,7 +39,7 @@ export default function HowItWorksSection() {
                 type="button"
                 onClick={() => setActiveIndex(index)}
                 aria-haspopup="dialog"
-                className="group relative flex h-full w-full cursor-pointer flex-col rounded-2xl border border-ink-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-26px_rgba(83,109,254,0.4)]"
+                className="group relative flex h-full w-full cursor-pointer flex-col rounded-2xl border border-ink-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-26px_rgba(30,99,255,0.45)]"
               >
                 <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-brand-200 bg-brand-50 text-base font-semibold text-brand-700 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
                   {step.number}

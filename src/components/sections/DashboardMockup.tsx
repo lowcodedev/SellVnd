@@ -126,15 +126,15 @@ export default function DashboardMockup() {
               <svg viewBox="0 0 320 120" className="mt-3 h-24 w-full" preserveAspectRatio="none" aria-hidden="true">
                 <defs>
                   <linearGradient id="salesFill" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stopColor="#536DFE" stopOpacity="0.35" />
-                    <stop offset="100%" stopColor="#536DFE" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#1E63FF" stopOpacity="0.45" />
+                    <stop offset="100%" stopColor="#1E63FF" stopOpacity="0" />
                   </linearGradient>
                 </defs>
                 <path d={SALES_AREA} fill="url(#salesFill)" />
                 <path
                   d={SALES_PATH}
                   fill="none"
-                  stroke="#8FA5FF"
+                  stroke="#7AAEFF"
                   strokeWidth="2"
                   strokeLinecap="round"
                   pathLength={200}

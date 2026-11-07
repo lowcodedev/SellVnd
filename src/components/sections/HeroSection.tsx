@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <p className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-200">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-300" aria-hidden="true" />
+            <span className="h-1.5 w-1.5 rounded-full bg-pop-400" aria-hidden="true" />
             The operating system for modern commerce
           </p>
 

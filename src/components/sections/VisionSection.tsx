@@ -36,7 +36,7 @@ export default function VisionSection() {
 
           <div className="relative mx-auto flex h-16 justify-center" aria-hidden="true">
             <svg className="h-full w-px overflow-visible" viewBox="0 0 2 64" preserveAspectRatio="none">
-              <line x1="1" y1="0" x2="1" y2="64" stroke="#8FA5FF" strokeOpacity="0.6" strokeWidth="2" strokeDasharray="4 6" />
+              <line x1="1" y1="0" x2="1" y2="64" stroke="#7AAEFF" strokeOpacity="0.6" strokeWidth="2" strokeDasharray="4 6" />
             </svg>
           </div>
 
