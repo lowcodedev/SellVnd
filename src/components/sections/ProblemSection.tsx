@@ -18,7 +18,7 @@ export default function ProblemSection() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
           {PROBLEM_CARDS.map((card, index) => (
             <Reveal key={card.title} delay={(index % 4) as 0 | 1 | 2 | 3}>
-              <article className="group h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-[0_1px_2px_rgba(16,20,38,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-24px_rgba(30,99,255,0.4)] sm:p-7">
+              <article className="group h-full rounded-2xl border border-ink-200 bg-white p-6 shadow-[0_1px_2px_rgba(16,20,38,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-24px_rgba(225,48,108,0.4)] sm:p-7">
                 <span className={`flex h-11 w-11 items-center justify-center rounded-xl ${iconToneClass(index)}`}>
                   <card.icon className="h-5 w-5" aria-hidden="true" />
                 </span>

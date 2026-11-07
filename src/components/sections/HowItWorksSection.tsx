@@ -39,9 +39,9 @@ export default function HowItWorksSection() {
                 type="button"
                 onClick={() => setActiveIndex(index)}
                 aria-haspopup="dialog"
-                className="group relative flex h-full w-full cursor-pointer flex-col rounded-2xl border border-ink-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-26px_rgba(30,99,255,0.45)]"
+                className="group relative flex h-full w-full cursor-pointer flex-col rounded-2xl border border-ink-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-26px_rgba(225,48,108,0.45)]"
               >
-                <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-accent-500 text-base font-semibold text-white shadow-[0_12px_24px_-10px_rgba(30,99,255,0.8)] transition-transform duration-300 group-hover:scale-105">
+                <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-accent-500 text-base font-semibold text-white shadow-[0_12px_24px_-10px_rgba(225,48,108,0.8)] transition-transform duration-300 group-hover:scale-105">
                   {step.number}
                 </span>
                 <span className="mt-7 text-lg font-semibold leading-[1.2] text-navy-800">{step.title}</span>

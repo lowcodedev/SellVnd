@@ -37,11 +37,11 @@ export default function VisionSection() {
 
           <div className="relative mx-auto flex h-16 justify-center" aria-hidden="true">
             <svg className="h-full w-px overflow-visible" viewBox="0 0 2 64" preserveAspectRatio="none">
-              <line x1="1" y1="0" x2="1" y2="64" stroke="#7AAEFF" strokeOpacity="0.6" strokeWidth="2" strokeDasharray="4 6" />
+              <line x1="1" y1="0" x2="1" y2="64" stroke="#25F4EE" strokeOpacity="0.6" strokeWidth="2" strokeDasharray="4 6" />
             </svg>
           </div>
 
-          <div className="relative mx-auto flex max-w-md flex-col items-center rounded-3xl border border-brand-400/30 bg-gradient-to-b from-brand-500/20 to-navy-900/60 p-8 text-center shadow-[0_30px_60px_-30px_rgba(83,109,254,0.6)]">
+          <div className="relative mx-auto flex max-w-md flex-col items-center rounded-3xl border border-brand-400/30 bg-gradient-to-b from-brand-500/20 to-navy-900/60 p-8 text-center shadow-[0_30px_60px_-30px_rgba(225,48,108,0.6)]">
             <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy-900 ring-1 ring-brand-400/40">
               <Layers className="h-7 w-7 text-brand-300" aria-hidden="true" />
             </span>
