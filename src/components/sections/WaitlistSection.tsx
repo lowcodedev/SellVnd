@@ -10,9 +10,9 @@ const BENEFITS = [
 
 export default function WaitlistSection() {
   return (
-    <section id="early-access" className="relative overflow-hidden bg-navy-900 py-20 text-white sm:py-24 lg:py-28">
-      <div className="pointer-events-none absolute -left-40 top-20 h-[460px] w-[460px] rounded-full bg-brand-500/25 blur-[140px]" />
-      <div className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-accent-500/20 blur-[140px]" />
+    <section id="early-access" className="relative overflow-hidden bg-gradient-to-br from-brand-700 via-navy-800 to-navy-900 py-20 text-white sm:py-24 lg:py-28">
+      <div className="pointer-events-none absolute -left-40 top-20 h-[460px] w-[460px] rounded-full bg-accent-400/30 blur-[140px]" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-pop-400/20 blur-[140px]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
         <Reveal>

@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
 
 export default function SolutionSection() {
   return (
-    <section className="relative overflow-hidden bg-navy-900 py-20 text-white sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br from-navy-900 via-brand-700 to-navy-900 py-20 text-white sm:py-24 lg:py-28">
       <div className="pointer-events-none absolute left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-400/50 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -44,7 +44,7 @@ export default function SolutionSection() {
           {HIGHLIGHTS.map((item, index) => (
             <Reveal key={item.title} delay={(index + 1) as 1 | 2 | 3}>
               <article className="h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors duration-300 hover:border-brand-400/40 hover:bg-white/[0.06] sm:p-7">
-                <CheckCircle2 className="h-5 w-5 text-brand-300" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-pop-400" aria-hidden="true" />
                 <h3 className="mt-4 text-lg font-semibold leading-[1.2] text-white">{item.title}</h3>
                 <p className="mt-3 text-sm leading-[1.5] text-ink-300">{item.description}</p>
               </article>

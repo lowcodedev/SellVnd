@@ -18,7 +18,7 @@ export default function HowItWorksSection() {
   const activeItem = activeIndex === null ? null : toDetailItem(WORKFLOW_STEPS[activeIndex]);
 
   return (
-    <section id="how-it-works" className="bg-ink-50 py-20 sm:py-24 lg:py-28">
+    <section id="how-it-works" className="bg-gradient-to-b from-ink-50 via-brand-50 to-ink-50 py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeader
@@ -41,7 +41,7 @@ export default function HowItWorksSection() {
                 aria-haspopup="dialog"
                 className="group relative flex h-full w-full cursor-pointer flex-col rounded-2xl border border-ink-200 bg-white p-7 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_20px_40px_-26px_rgba(30,99,255,0.45)]"
               >
-                <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-brand-200 bg-brand-50 text-base font-semibold text-brand-700 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
+                <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-accent-500 text-base font-semibold text-white shadow-[0_12px_24px_-10px_rgba(30,99,255,0.8)] transition-transform duration-300 group-hover:scale-105">
                   {step.number}
                 </span>
                 <span className="mt-7 text-lg font-semibold leading-[1.2] text-navy-800">{step.title}</span>

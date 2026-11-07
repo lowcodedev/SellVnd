@@ -1,12 +1,13 @@
 import ChannelIcon from '@/components/ui/ChannelIcon';
 import { Layers } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
+import { iconToneClass } from '@/components/ui/iconTones';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { SOCIAL_CHANNELS } from '@/data/content';
 
 export default function VisionSection() {
   return (
-    <section className="relative overflow-hidden bg-navy-800 py-20 text-white sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br from-navy-800 via-brand-700 to-navy-900 py-20 text-white sm:py-24 lg:py-28">
       <div className="grid-texture pointer-events-none absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
@@ -21,12 +22,12 @@ export default function VisionSection() {
 
         <Reveal delay={1} className="mx-auto mt-14 max-w-4xl lg:mt-16">
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
-            {SOCIAL_CHANNELS.map((channel) => (
+            {SOCIAL_CHANNELS.map((channel, index) => (
               <li
                 key={channel}
                 className="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/50 hover:bg-white/[0.07]"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 text-brand-200 transition-colors group-hover:bg-brand-500/20">
+                <span className={`flex h-11 w-11 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 ${iconToneClass(index)}`}>
                   <ChannelIcon channel={channel} className="h-5 w-5" />
                 </span>
                 <span className="text-sm font-medium text-ink-100">{channel}</span>

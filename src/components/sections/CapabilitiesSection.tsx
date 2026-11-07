@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DetailDialog, { type DetailItem } from '@/components/ui/DetailDialog';
+import { iconToneClass } from '@/components/ui/iconTones';
 import Reveal from '@/components/ui/Reveal';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { CAPABILITIES, type CapabilityCard } from '@/data/content';
@@ -19,7 +20,7 @@ export default function CapabilitiesSection() {
   const activeItem = activeIndex === null ? null : toDetailItem(CAPABILITIES[activeIndex]);
 
   return (
-    <section id="features" className="bg-white py-20 sm:py-24 lg:py-28">
+    <section id="features" className="bg-gradient-to-b from-brand-50 via-white to-white py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeader
@@ -42,7 +43,7 @@ export default function CapabilitiesSection() {
                   className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-gradient-to-r from-brand-500 to-accent-500 transition-transform duration-500 group-hover:scale-x-100"
                   aria-hidden="true"
                 />
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-brand-200 shadow-[0_10px_20px_-12px_rgba(16,20,38,0.6)]">
+                <span className={`flex h-12 w-12 items-center justify-center rounded-xl ${iconToneClass(index)}`}>
                   <capability.icon className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <span className="mt-6 text-lg font-semibold leading-[1.2] text-navy-800">{capability.title}</span>

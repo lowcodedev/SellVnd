@@ -6,11 +6,11 @@ export default function HeroSection() {
   return (
     <section
       id="overview"
-      className="relative overflow-hidden bg-navy-800 pb-20 pt-14 text-white sm:pt-20 lg:pb-28 lg:pt-24"
+      className="relative overflow-hidden bg-gradient-to-br from-brand-600 via-brand-700 to-navy-900 pb-20 pt-14 text-white sm:pt-20 lg:pb-28 lg:pt-24"
     >
       <div className="grid-texture pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
       <div className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-brand-500/25 blur-[120px]" />
-      <div className="pointer-events-none absolute right-[-10%] top-1/3 h-72 w-72 rounded-full bg-accent-500/20 blur-[110px]" />
+      <div className="pointer-events-none absolute right-[-10%] top-1/3 h-72 w-72 rounded-full bg-accent-400/30 blur-[110px]" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -24,7 +24,7 @@ export default function HeroSection() {
             style={{ animationDelay: '80ms' }}
           >
             Your entire business.{' '}
-            <span className="bg-gradient-to-r from-brand-200 via-brand-300 to-accent-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-300 via-pop-300 to-pop-400 bg-clip-text text-transparent">
               One powerful system.
             </span>
           </h1>
