@@ -46,7 +46,10 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-4 md:flex">
+          <a href="/app" className="text-sm font-medium text-ink-300 transition-colors hover:text-white">
+            Sign in
+          </a>
           <a href="#early-access" className={buttonStyles('primary', 'px-5 py-2.5')}>
             Join the Waitlist
           </a>
@@ -81,6 +84,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/app"
+            onClick={closeMenu}
+            className="rounded-xl px-4 py-3 text-base font-medium text-ink-100 transition-colors hover:bg-white/5 hover:text-white"
+          >
+            Sign in
+          </a>
           <a
             href="#early-access"
             onClick={closeMenu}
