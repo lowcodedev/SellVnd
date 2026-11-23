@@ -77,12 +77,9 @@ function DashboardGate() {
 }
 
 function AppRoutes() {
-  const { route } = useRouter();
+  useRouter();
 
-  if (isAppRoute()) {
-    if (route.path === 'settings') return <DashboardGate />;
-    return <DashboardGate />;
-  }
+  if (isAppRoute()) return <DashboardGate />;
 
   return <MarketingSite />;
 }
