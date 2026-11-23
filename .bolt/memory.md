@@ -3,31 +3,29 @@
 ## Product intent & audience
 
 - Commerce platform for merchants; main product spans products, inventory, orders, customers, conversations, payments, social publishing, and AI workflows.
-- Existing public marketing/waitlist landing page already built; main product is a separate signed-in application area.
-- Merchants are the primary users of the dashboard.
+- Two separate Bolt projects: current project = marketing/waitlist landing page only; dashboard = a different/new Bolt project.
+- Current project scope: keep and maintain the public marketing/waitlist site; remove dashboard code if added.
 
 ## Brand personality & voice
 
-- Treated as a serious, production-grade product rather than a demo or scaffold.
-- Communication leans collaborative and consultative; surfaces tradeoffs and asks clarifying questions before large builds.
+- Serious, production-grade product positioning; not a demo or scaffold.
+- Collaborative, consultative communication; surfaces tradeoffs and asks clarifying questions before large builds.
 
 ## Visual design & UX direction
 
-- Dashboard shell planned: signed-in layout with sidebar navigation and top bar.
-- First feature module: products + inventory, since other modules depend on having products.
-- Marketing site intentionally avoided authentication; dashboard introduces auth flows (sign-up/sign-in).
+- Current project: marketing/waitlist site only — no authentication flows in this project.
 - Stack-implied conventions: Tailwind utility classes, Lucide React icons, `@/` import alias to `src/`, React hooks — no extra UI/icon packages unless explicitly requested.
 
 ## Decisions, constraints & rationale
 
-- Recommended starting point: dashboard shell + product/inventory module before orders, conversations, customers, social, or AI workflows.
-- Rationale: product data is the foundation other commerce modules build on.
-- Auth is a required addition for the main product even though the marketing site omitted it.
+- Dashboard (auth, products, inventory, orders, etc.) will be built in a separate new Bolt project, not here.
+- Rationale: keep the waitlist/marketing site isolated; avoid mixing marketing and signed-in app concerns in one project.
+- If dashboard code was added to this project, it should be removed to restore the marketing-only state.
 - Avoid installing additional packages for UI themes or icons unless absolutely necessary.
 
 ## Open questions & assumptions
 
-- Should the waitlist/marketing site remain as the public landing page with the dashboard as a separate signed-in area? (assumed yes)
-- Which modules should be prioritized after products/inventory? Candidates: orders, conversations, customers, social publishing.
-- Preferred auth method for merchants: email/password or something else? Not yet confirmed.
-- No data model, API, or persistence approach chosen yet for the product.
+- Assumption: the marketing/waitlist site remains the public landing page; the dashboard is a separate signed-in app in a new project.
+- Awaiting confirmation on whether to clean up / remove any dashboard code from the current project now.
+- Dashboard project priorities (once created): auth, products/inventory first, then orders, conversations, customers, social, AI workflows.
+- Preferred auth method for merchants and data model/persistence approach are decisions for the new dashboard project, not this one.
