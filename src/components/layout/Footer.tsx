@@ -4,7 +4,6 @@ import { NAV_LINKS } from '@/data/content';
 const LEGAL_LINKS = [
   { label: 'Privacy Policy', href: '#privacy' },
   { label: 'Terms of Service', href: '#terms' },
-  { label: 'Dashboard', href: '/app' },
 ];
 
 export default function Footer() {
